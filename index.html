@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>arkcimi's Blog</title><meta name="author" content="arkcimi"><meta name="copyright" content="arkcimi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="arkcimi&#39;s Blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="arkcimi&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/head.jpg">
+<meta property="article:author" content="arkcimi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/head.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'arkcimi\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-03-22 19:29:33'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="arkcimi's Blog"><span class="site-name">arkcimi's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">arkcimi's Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/docker/" title="docker">docker</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-22T11:25:10.000Z" title="发表于 2024-03-22 19:25:10">2024-03-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/INTERNET/">INTERNET</a></span></div><div class="content">download
+update the apt package index and install packages to allow apt to use a repository over HTTPS
+123456sudo apt-get install \    ca-certificates \    curl \    gnupgsudo install -m 0755 -d /etc/apt/keyrings
+
+add Docker’s officialGPG key
+123curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpgsudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+set up therepository
+123456echo \  &quot;deb [arch=&quot;$(dpkg --print-architecture)&quot; signed-by ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/ssrf/" title="ssrf">ssrf</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-09T01:02:55.000Z" title="发表于 2024-03-09 09:02:55">2024-03-09</time></span></div><div class="content">SSRFServer-Side Request Forgery(服务器端请求伪造)
+是一种由攻击者构造请求，由 服务端 发起请求的安全漏洞;
+一般情况下，SSRF攻击的目标是外网无法访问的内网系统，也正因为请求是由服务端发起的，所以服务端能请求到与自身相连而与外网隔绝的内部系统
+functioncurl1234567$ch = curl_init();curl_setopt($ch, CURLOPT_URL, $_REQUEST[&#x27;url&#x27;]);curl_setopt($ch, CURLOPT_HEADER, 0);curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);$result = curl_exec($ch);curl_close($ch);echo $result;
+
+file12345file_get_contents($url)readfile($url) fopen()
+
+fsockopen1234567891011121314151617fsockopen($hostname ,$port, $errno, $er ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/xss/" title="xss">xss</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-03T05:13:27.000Z" title="发表于 2024-03-03 13:13:27">2024-03-03</time></span></div><div class="content">learn简介xss(Cross Site Script) 
+跨站脚本攻击是指恶意攻击者往Web页面里插入恶意Script代码，当用户浏览该页之时，嵌入其中Web里面的Script代码会被执行，从而达到恶意攻击用户的目的
+ctfer通过php的输出函数将javascript代码输出到html页面
+比如 alert()
+&#x2F;&#x2F;有关xss的image
+常见XSS攻击方式script123&lt;script&gt;    alert(1);&lt;/script&gt;
+
+image&#x2F;video123&lt;img src=1 onerror=alert(1)&gt;&lt;video&gt;&lt;source onerror=alert(1)&gt;&lt;audio src=1  onerror=alert(1)&gt;
+
+source 不存在，就会触发error
+input12345&quot;alert(1);&quot; or alert(1)&lt;input onfocus=alert(1)&gt; &lt;!-- 点击(聚焦)输入框 --&gt ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/md5/" title="md5">md5</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-27T14:23:34.000Z" title="发表于 2023-12-27 22:23:34">2023-12-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">md5绕过弱比较以0e开头，PHP会当作科学计数法来处理，也就是0的n次方，得到的值弱比较的时候都相同
+
+
+
+$a
+md5($a)
+
+
+
+240610708
+0e462097431906509019562988736854
+
+
+QLTHNDT
+0e405967825401955372549139051580
+
+
+QNKCDZO
+0e830400451993494058024219903391
+
+
+PJNPDWY
+0e291529052894702774557631701704
+
+
+NWWKITQ
+0e763082070976038347657360817689
+
+
+NOOPCJF
+0e818888003657176127862245791911
+
+
+MMHUWUV
+0e701732711630150438129209816536
+
+
+MAUXXQC
+0e478478466848439040434801845361
+
+
+绕过与自己弱比较0e215962017 
+md5后也是以0e开头
+SQLffifdyop经过md5后结果为276f722736c95d99e921722cf9ed621c ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/php%E4%BC%AA%E5%8D%8F%E8%AE%AE/" title="php伪协议">php伪协议</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-18T06:54:07.000Z" title="发表于 2023-12-18 14:54:07">2023-12-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">函数先看一些函数
+include() | require()-    index.php    1234567&lt;?php    highlight_file(__FILE__);    $file=$_GET[&#x27;file&#x27;];    include($file);    echo($flag);?&gt;    flag.php    123&lt;?php    $flag=&quot;flag&#123;success&#125;&quot;?&gt;
+Notice: Undefined variable: flag
+
+传参 ```?file=flag.php```
+
+这个时候 **flag&#123;success&#125;**
+
+
+通过 include 或 require 函数，可以将 PHP 文件的内容插入另一个 PHP 文件
+(在服务器执行它之前)
+
+若文件不存在, include 只会警告 然后执行后边的正常语句
+但 require 会直接报错然后跳出函数
+
+
+include_once() | require_once()如果该文件中的代码已经 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/Python/" title="Python">Python</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-07T15:05:36.000Z" title="发表于 2023-12-07 23:05:36">2023-12-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python/">Python</a></span></div><div class="content">Python数组(补一下python的知识)
+tuple
+1(a, b, c......)
+
+list
+1[a, b, c......]
+
+dict
+1&#123;a:aa, b:bb, c:cc......&#125;
+
+osaa
+1import os
+
+1234567&gt;&gt;&gt; print(os.popen(&#x27;ls /&#x27;).read())binbootdev......www_30765www_9050
+
+12345678&gt;&gt;&gt; os.getcwd()                 # 获取当前工作路径&#x27;/home/arkcimi&#x27;&gt;&gt;&gt; os.getlogin()               # 获取登录信息&#x27;arkcimi&#x27;&gt;&gt;&gt; os.name&#x27;posix&#x27;&gt;&gt;&gt; os.environ&#123;环境变量&#125;
+
+爬虫随便找个小说试一下
+剑来
+用burp抓包
+章节目录
+123456789101112131 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/kali/" title="kali">kali</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-06T15:37:37.000Z" title="发表于 2023-12-06 23:37:37">2023-12-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">Kali Linux 配置换源1sudo vim /etc/apt/sources.list
+
+加上 源
+123456中科大源deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contribdeb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib清华大学源deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-freedeb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+
+更新源
+1sudo apt update
+
+更新软件
+1sudo apt upgrade
+
+浏览器Chrome1wget https://dl.google.com/linux/direct/google-chrome-stable_curren ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/SQL%E6%B3%A8%E5%85%A5/" title="SQL注入">SQL注入</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-28T13:14:43.000Z" title="发表于 2023-11-28 21:14:43">2023-11-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">SQL注入structure$$database_1 \begin{cases}    table_1 \begin{bmatrix}        column_1 &amp; column_2 &amp; column_3 &amp; \cdots \        content_{11} &amp; content_{12} &amp; content_{13} &amp; \cdots \        content_{21} &amp; content_{22} &amp; content_{23} &amp; \cdots \        content_{31} &amp; content_{32} &amp; content_{33} &amp; \cdots \    \end{bmatrix}   \    table_2 \begin{bmatrix}        column_1 &amp; column_2 &amp; column_3 &amp; \cdots \        content_{11} &amp; content_{12} &amp ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/%E6%96%87%E4%BB%B6%E6%B3%A8%E5%85%A5/" title="文件注入">文件注入</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-16T15:45:42.000Z" title="发表于 2023-11-16 23:45:42">2023-11-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">文件注入原理用 phpstudy 创建一个网站
+index.html12345678910&lt;html&gt;    &lt;body&gt;        &lt;form action=&quot;upload_file.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;        	&lt;label for=&quot;file&quot;&gt;filename:&lt;/label&gt;			&lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;file&quot; /&gt;			&lt;br /&gt;			&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;submit&quot; /&gt;        &lt;/form&gt;    &lt;/body&gt;&lt;/html&gt;
+
+u ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/pop-chain/" title="pop_chain">pop_chain</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-12T06:52:32.000Z" title="发表于 2023-11-12 14:52:32">2023-11-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CTF/">CTF</a></span></div><div class="content">Pop Chain__sleep &amp; __wakeup || __serialize &amp; __unserialize当serialize一个对象时, 会自动调用对象内的sleep函数当unserialize一个对象时, 会自动调用对象内的wakeup函数
+我们可以用urlencode函数把自己构造的实例对象通过url传回源代码例如:
+12345678910111213141516class Class1&#123;    public $aa = &quot;Aa&quot;;    public $bb = &quot;Bb&quot;;    public $cc = &quot;Cc&quot;;    public function __wakeup()    &#123;        echo($this-&gt;aa);        echo(&quot;&lt;br /&gt;&quot;);        echo($this-&gt;bb);        echo(&quot;&lt;br /&gt;&quot;);        echo($t ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="avatar"/></div><div class="author-info__name">arkcimi</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/arkcimi"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/docker/" title="docker">docker</a><time datetime="2024-03-22T11:25:10.000Z" title="发表于 2024-03-22 19:25:10">2024-03-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/ssrf/" title="ssrf">ssrf</a><time datetime="2024-03-09T01:02:55.000Z" title="发表于 2024-03-09 09:02:55">2024-03-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/xss/" title="xss">xss</a><time datetime="2024-03-03T05:13:27.000Z" title="发表于 2024-03-03 13:13:27">2024-03-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/md5/" title="md5">md5</a><time datetime="2023-12-27T14:23:34.000Z" title="发表于 2023-12-27 22:23:34">2023-12-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/php%E4%BC%AA%E5%8D%8F%E8%AE%AE/" title="php伪协议">php伪协议</a><time datetime="2023-12-18T06:54:07.000Z" title="发表于 2023-12-18 14:54:07">2023-12-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/CTF/"><span class="card-category-list-name">CTF</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/INTERNET/"><span class="card-category-list-name">INTERNET</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Math/"><span class="card-category-list-name">Math</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/intval/" style="font-size: 1.1em; color: #999">intval</a> <a href="/tags/sql/" style="font-size: 1.1em; color: #999">sql</a> <a href="/tags/php%E4%BC%AA%E5%8D%8F%E8%AE%AE/" style="font-size: 1.1em; color: #999">php伪协议</a> <a href="/tags/php%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95/" style="font-size: 1.1em; color: #999">php魔术方法</a> <a href="/tags/math/" style="font-size: 1.1em; color: #999">math</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" style="font-size: 1.1em; color: #999">命令执行</a> <a href="/tags/pop-chain/" style="font-size: 1.1em; color: #999">pop chain</a> <a href="/tags/include/" style="font-size: 1.1em; color: #999">include</a> <a href="/tags/docker/" style="font-size: 1.1em; color: #999">-docker</a> <a href="/tags/%E6%96%87%E4%BB%B6%E6%B3%A8%E5%85%A5/" style="font-size: 1.3em; color: #99a1ac">文件注入</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a> <a href="/tags/preg-match%E7%BB%95%E8%BF%87/" style="font-size: 1.1em; color: #999">preg_match绕过</a> <a href="/tags/php/" style="font-size: 1.1em; color: #999">php</a> <a href="/tags/linux/" style="font-size: 1.1em; color: #999">linux</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 1.1em; color: #999">正则表达式</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/ctf/" style="font-size: 1.5em; color: #99a9bf">ctf</a> <a href="/tags/md5/" style="font-size: 1.1em; color: #999">md5</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">6</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">13</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-03-22T11:29:33.749Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By arkcimi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
